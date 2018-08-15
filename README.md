@@ -1,7 +1,7 @@
 # CS61A-1.7--Integer-partition-without-recursion
-The number of partitions of a positive integer n, using parts up to size m, 
-is the number of ways in which n can be expressed as the sum of positive integer 
-parts up to m in increasing order. 
+The number of partitions of a positive integer m, using parts up to size n, 
+is the number of ways in which m can be expressed as the sum of positive integer 
+parts up to n in increasing order. 
 For example, the number of partitions of 6 using parts up to 4 is 9.  
 
 6 = 2 + 4 
@@ -20,5 +20,5 @@ For example, the number of partitions of 6 using parts up to 4 is 9.
 
 6 = 1 + 1 + 1 + 1 + 1 + 1 
 
-As requested by the teacher of CS 61A, I will define a function Partitions(n, m) that returns the number of different partitions of n 
-parts up to m, without using recursion. This is a simple C# Console version. It can also list all possible solutions as well.
+As requested by the teacher of CS 61A, I will define a function Partitions(m, n) that returns the number of different partitions of m 
+parts up to n, without using recursion. This is a simple C# Console version. It can also list all possible solutions as well.
