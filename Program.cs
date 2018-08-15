@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     class Program
     {
-        private static bool CompareTwoList(List<int> a, List<int> b)
+        private static bool CompareTwoList(List<int> a, List<int> b) // to check two integer lists are same or not
         {
             if (a.Count == b.Count)
             {
@@ -21,7 +21,8 @@ namespace ConsoleApp2
             return false;
         }
 
-        private static List<List<int>> Merge(List<List<int>> a, List<List<int>> b)
+        private static List<List<int>> Merge(List<List<int>> a, List<List<int>> b) 
+       // to join a list of integer lists b into a. If a element from b can be found in a, it will be discarded  
         {
             List<List<int>> result = new List<List<int>>();
             a.ForEach(m => result.Add(m));
@@ -39,7 +40,10 @@ namespace ConsoleApp2
             return result;
         }
 
-        private static List<List<int>> Shrink(List<int> a, int n)
+        private static List<List<int>> Shrink(List<int> a, int n) 
+            // to remove the last element (a[tail]) in list a, and add it to a previous element (a[k]), i.e., a[k] += a[tail] while satisfying:
+            // 1. a[tail]+a[k] < n
+            // 2. after adding, a[k] < a[k-1]
         {
             List<List<int>> result = new List<List<int>>();
             int length = a.Count;//get size of a
@@ -50,7 +54,7 @@ namespace ConsoleApp2
                 {
                     temp.Add(a[j]);
                 }
-                temp[i] += a[length - 1]; // put all the apples in the last basket to one of the basket in front
+                temp[i] += a[length - 1]; 
                 if (temp[i] > n) continue;
                 if (i - 1 >= 0)
                     if (temp[i] > temp[i - 1]) continue;
@@ -63,8 +67,8 @@ namespace ConsoleApp2
         {
             List<List<List<int>>> S = new List<List<List<int>>>();// store all solutions, S[i] is solutions with number of elements = m-i
             //initializing//////////////////////////////////////////////////////////////////////////////
-            List<int> a = new List<int>(); // store a soultion
-            List<List<int>> b = new List<List<int>>(); // store solutions with same number of elements
+            List<int> a = new List<int>(); 
+            List<List<int>> b = new List<List<int>>(); 
             int total = 0;
             for (int i = 0; i < m; i++)
                 a.Add(1);
@@ -83,7 +87,6 @@ namespace ConsoleApp2
                     if (temp.Count > 0)
                         Current_level = Merge(Current_level, temp);
                 }
-
                 if (Current_level.Count > 0)
                 {
                     S.Add(Current_level);
