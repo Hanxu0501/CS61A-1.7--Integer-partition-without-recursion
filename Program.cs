@@ -42,7 +42,7 @@ namespace ConsoleApp2
 
         private static List<List<int>> Shrink(List<int> a, int n) 
             // to remove the last element (a[tail]) in list a, and add it to a previous element (a[k]), i.e., a[k] += a[tail] while satisfying:
-            // 1. a[tail]+a[k] < n
+            // 1. a[tail]+a[k] <= n
             // 2. after adding, a[k] <= a[k-1]
         {
             List<List<int>> result = new List<List<int>>();
