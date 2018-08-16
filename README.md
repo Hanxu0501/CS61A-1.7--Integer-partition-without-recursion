@@ -27,7 +27,7 @@ parts up to n, without using recursion. This is a simple C# Console version. It 
 <ul>
 <li>I use the idea of building a solution tree.</li>
 
-<li>The root of the tree will divide number M into M elements, each one has value of 1. For example, for number 5, the root solutioin is [1,1,1,1,1].</li>
+<li>The root of the tree is the solution which divides the number M into M elements, each one has value of 1. For example, for number 5, the root solutioin is [1,1,1,1,1].</li>
 
 <li>From this root, children and children's children are generated, by using a function called "Shrink".</li>
 
