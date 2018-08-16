@@ -51,5 +51,5 @@ parts up to n, without using recursion. This is a simple C# Console version. It 
 
 <li>From those "legal" children, next gernation of children is produced in the same way, this is how "partition" function will do. </li>
 
-<li>The maximum generation that "partition" will loop is m, but The "partition" function will stop and return total number of solutions when one of the generation has zero children.</li>
+<li>The maximum generation that "partition" will loop is m, but The "partition" function will stop and return total number of solutions when current loop has zero children.</li>
 </ul>
