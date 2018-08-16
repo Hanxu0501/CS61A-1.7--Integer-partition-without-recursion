@@ -33,7 +33,7 @@ parts up to n, without using recursion. This is a simple C# Console version. It 
 
 <li>A "father" have one more elements than his "children".</li>
 
-<li>To generate a "child" from a "father", "Merge" function will take the last element from "father", and try to add its value to every elemnets ahead of it. By doing so, a new child is generated. However, we have to apply a filter to select "legal" child, and abandon bad ones. </li>
+<li>To generate a "child" from a "father", "Shrink" function will take the last element from "father", and try to add its value to every elemnets ahead of it. By doing so, a new child is generated. However, we have to apply a filter to select "legal" child, and abandon bad ones. </li>
 
 <li>The selection rule is: 
   
