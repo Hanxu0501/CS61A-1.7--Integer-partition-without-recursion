@@ -39,7 +39,7 @@ The selection rule is: 1. the value of changed elements (which receive the value
 
 2. The value of changed elements should not be larger than the element ahead of it. (to keep the elements in decending order)
 
-Merge function will return a list of "legal" children from a single father.
+"Shrink" function will return a list of "legal" children from a single father.
 
 A "Merge" function will join all the children from all the fathers into a larger list. If two children from different fathers are idential, one of them will be disgarded. 
 
