@@ -14,7 +14,9 @@ For example, the number of partitions of 6 using parts up to 4 is 9.
 
 6 = 1 + 1 + 1 + 3 
 
-6 = 2 + 2 + 2 6 = 1 + 1 + 2 + 2 
+6 = 2 + 2 + 2 
+
+6 = 1 + 1 + 2 + 2 
 
 6 = 1 + 1 + 1 + 1 + 2 
 
