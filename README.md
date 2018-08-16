@@ -23,7 +23,7 @@ For example, the number of partitions of 6 using parts up to 4 is 9.
 As requested by the teacher of CS 61A, I will define a function Partitions(m, n) that returns the number of different partitions of m 
 parts up to n, without using recursion. This is a simple C# Console version. It can also list all possible solutions as well.
 
-<strong>Algorithm explained：</strong>
+<h1>Algorithm explained：</h1>
 
 I use the idea of building a solution tree.
 
